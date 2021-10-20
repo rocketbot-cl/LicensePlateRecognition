@@ -40,13 +40,24 @@ module = GetParams("module")
 
 try:
 
-    if (module == "recognizeLicensePlate"):
+    if (module == "connectToCarCheck"):
 
         secretKey = GetParams("secretKey")
-        pathToLicense = GetParams("pathToLicense")
-        country = GetParams("country")
+
+        resultConnection = False
         
         licensePlateRecognition_I = LicensePlateRecognitionObj(secretKey)
+        
+        if licensePlateRecognition_I.secretKey:
+            resultConnection = True
+    
+        whereToStore = GetParams("whereToStore")
+        SetVar(whereToStore, resultConnection)
+
+    if (module == "recognizeLicensePlate"):
+
+        pathToLicense = GetParams("pathToLicense")
+        country = GetParams("country")
 
         resultRecognition = licensePlateRecognition_I.recognizeLicensePlate(pathToLicense, country)
 
