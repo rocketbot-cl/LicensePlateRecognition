@@ -10,9 +10,9 @@ Recognize license plate and obtains its data.
   
 __Download__ and __install__ the content in 'modules' folder in Rocketbot path
 ## How to use this module
-  
-Eiusmod veniam ut nisi minim in. Do et deserunt eiusmod veniam sint aliqua nulla adipisicing laboris voluptate fugiat 
-ullamco elit do. Sint amet cillum fugiat excepteur mollit voluptate reprehenderit nisi commodo sint minim. ##explicar q hay q crear cuenta de api y obtener el secretkey
+
+Before using this module, you have to create an account in https://www.openalpr.com/software/carcheck following its instructions. After that, login to your account and go to https://cloud.openalpr.com/cloudapi/ for obtain your Secret Key.
+
 ## Overview
 
 
