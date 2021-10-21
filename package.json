@@ -5,10 +5,10 @@
     "version":"0.1.0",
     "license": "MIT",
     "homepage":"http://rocketbot.co/",
-    "linux": false,
+    "linux": true,
     "windows":true,
-    "mac":false,
-    "docker":false,
+    "mac":true,
+    "docker":true,
     "name": "LicensePlateRecognition",
     "dependencies": {
         "requests": "2.26.0"
@@ -76,21 +76,21 @@
             "options": false,
             "father": "module",
             "group": "scripts",
-            "linux": false,
+            "linux": true,
             "windows":true,
-            "mac":false,
-            "docker":false
+            "mac":true,
+            "docker":true
         },
         {
             "en": {
                 "title": "Upload image to analyze",
-                "description": "Upload an image to analyze",
+                "description": "Upload an image of a license plate to analyze and get the data",
                 "title_options": "Select Option",
                 "options":null
             },
             "es": {
                 "title": "Subir imagen para analizar",
-                "description": "Subir una imagen para analizar",
+                "description": "Sube una imagen para analizar la patente y obtener los datos del vehiculo.",
                 "title_options": "Seleccione una opción",
                 "options": null
             },
@@ -100,12 +100,12 @@
                     {
                         "type": "input",
                         "placeholder": {
-                            "es": "br, us, ar, etc.",
-                            "en": "br, us, ar, etc."
+                            "es": "br, us, eu, etc. (uno solo a la vez).",
+                            "en": "br, us, eu, etc. (one at a time)."
                         },
                         "title": {
-                            "es": "country:",
-                            "en": "country:"
+                            "es": "Pais:",
+                            "en": "Country:"
                         },
                         "id": "country",
                         "css": "col-md-6"
@@ -155,10 +155,10 @@
             "options": false,
             "father": "module",
             "group": "scripts",
-            "linux": false,
+            "linux": true,
             "windows":true,
-            "mac":false,
-            "docker":false
+            "mac":true,
+            "docker":true
         }
     ]
 }
