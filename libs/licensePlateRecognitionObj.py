@@ -30,7 +30,7 @@ class LicensePlateRecognitionObj:
 
         url = f"https://api.openalpr.com/v3/recognize_bytes?recognize_vehicle=1&country={country}&secret_key={self.secretKey}"
 
-        r = requests.post(url, data = img_base64)
+        r = requests.post(url, data = imgBase64)
         a = r.json()
 
         return(a)

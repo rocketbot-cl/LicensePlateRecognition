@@ -59,7 +59,7 @@ try:
         pathToLicense = GetParams("pathToLicense")
         country = GetParams("country")
 
-        resultRecognition = licensePlateRecognition_I.recognizeLicensePlate(pathToLicense, country)
+        resultRecognition = licensePlateRecognition_I.licensePlateData(pathToLicense, country)
 
         whereToStore = GetParams("whereToStore")
         SetVar(whereToStore, resultRecognition)
