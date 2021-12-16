@@ -45,6 +45,10 @@
                             "es": "secretKey:",
                             "en": "secretKey:"
                         },
+                        "description": {
+                            "es": "Secret Key de la API obtenida en la página.",
+                            "en": "Secret Key of the API obtain from the webpage."
+                        },
                         "id": "secretKey",
                         "css": "col-md-6"
                     },
@@ -57,6 +61,10 @@
                         "title": {
                             "es": "Asignar resultado a variable:",
                             "en": "Assign result to variable:"
+                        },
+                        "description": {
+                            "es": "Variable donde asignar el resultado.",
+                            "en": "Variable where to store the result."
                         },
                         "help": {
                             "es": "Nombre de variable sin {}",
@@ -107,6 +115,10 @@
                             "es": "Pais:",
                             "en": "Country:"
                         },
+                        "description": {
+                            "es": "Siglas del país que se desea consultar.",
+                            "en": "Acronym/abbreviation of the country you want to consult in."
+                        },
                         "id": "country",
                         "css": "col-md-6"
                     },
@@ -119,6 +131,10 @@
                         "title": {
                             "es": "Ruta donde está la imagen de la patente:",
                             "en": "Path to license plate image:"
+                        },
+                        "description": {
+                            "es": "Ruta a la imagen de la cual se requiere analizar.",
+                            "en": "Path to the image that you want to analize."
                         },
                         "help": {
                             "es": "C:/Users/User/Pictures/licensePlate.jpg",
@@ -140,6 +156,10 @@
                         "help": {
                             "es": "Nombre de variable sin {}",
                             "en": "Variable name without {}"
+                        },
+                        "description": {
+                            "es": "Variable donde asignar el resultado.",
+                            "en": "Variable where to store the result."
                         },
                         "remove_vars" : true,
                         "id": "whereToStore",
@@ -186,6 +206,10 @@
                             "es": "Token:",
                             "en": "Token:"
                         },
+                        "description": {
+                            "es": "Token de la API asignado a la cuenta.",
+                            "en": "Token of the API assigned to your account."
+                        },
                         "help": {
                             "es": "Token provisto por Plate Recognizer",
                             "en": "Token provied from Plate Recognizer"
@@ -202,6 +226,10 @@
                         "title": {
                             "es": "Nombre con el cual subir:",
                             "en": "Name to upload with:"
+                        },
+                        "description": {
+                            "es": "Nombre con el cual sera agregado al nombre en el panel de Plate Recognizer.",
+                            "en": "Name to append to the finished upload to Plate Recognizer."
                         },
                         "help": {
                             "es": "auto.jpg",
@@ -220,6 +248,10 @@
                             "es": "Seleccionar un archivo:",
                             "en": "Select a file:"
                         },
+                        "description": {
+                            "es": "Ruta al archivo que se desea analizar.",
+                            "en": "Path to the image you want to analize."
+                        },
                         "help": {
                             "es": "Ruta donde está el archivo",
                             "en": "Path to file"
@@ -236,6 +268,10 @@
                         "title": {
                             "es": "Asignar resultado a variable:",
                             "en": "Assign result to variable:"
+                        },
+                        "description": {
+                            "es": "Token de la API asignado a la cuenta.",
+                            "en": "Token of the API assigned to your account."
                         },
                         "help": {
                             "es": "Nombre de variable sin {}",
