@@ -33,7 +33,9 @@ if cur_path not in sys.path:
     sys.path.append(cur_path)
 
 from licensePlateRecognitionObj import LicensePlateRecognitionObj
+from plateRecognitionObj import PlateRecognitionObj
 
+global plateRecognition_I
 global licensePlateRecognition_I
 
 module = GetParams("module")
@@ -63,6 +65,20 @@ try:
 
         whereToStore = GetParams("whereToStore")
         SetVar(whereToStore, resultRecognition)
+
+    if (module == "sendLicensePlate"):
+        
+        apiToken = GetParams("apiToken")
+        pathToFile = GetParams("pathToFile")
+        nameToUpload = GetParams("nameToUpload")
+
+        plateRecognition_I = PlateRecognitionObj(apiToken)
+
+        resultRecognition = plateRecognition_I.sendLicensePlate(pathToFile, nameToUpload)
+
+        whereToStore = GetParams("whereToStore")
+        SetVar(whereToStore, resultRecognition)
+
 
 except Exception as e:
     print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
